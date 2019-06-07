@@ -3,7 +3,7 @@
 Get introduced to new interns every week.
 
 ## Usage
-    ```
+    ```bash
         python3 intern_social_matcher.py <intern_list_file> <group_size>
     ```
 
