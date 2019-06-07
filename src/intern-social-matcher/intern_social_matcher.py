@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     intern_list = None
     with open(sys.argv[1]) as intern_list_file:
-        intern_list = intern_list_file.read().split()
+        intern_list = intern_list_file.read().split("\n")
 
     group_size = int(sys.argv[2])
 
