@@ -2,6 +2,7 @@ import itertools
 import random
 import sys
 import os
+import json
 
 
 def get_intern_pairings(intern_list, group_size):
@@ -30,4 +31,4 @@ if __name__ == "__main__":
     pairings = get_intern_pairings(intern_list=intern_list,
                                    group_size=group_size)
 
-    print(pairings)
+    print(json.dumps(pairings, indent=4, sort_keys=True))
