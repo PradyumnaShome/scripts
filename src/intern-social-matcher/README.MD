@@ -18,7 +18,7 @@ where
 
 `group_size` is the number of people you'd like to meet every time
 
-## Render intern matching output
+### Render intern matching output
 
 To render a web page, run
 
