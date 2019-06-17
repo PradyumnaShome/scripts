@@ -1,0 +1,21 @@
+{% block body %}
+<h1 class="heading">
+    Doughnut Intern Matcher
+</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="templates/matches.css"></link>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Open+Sans|Saira+Semi+Condensed&display=swap" rel="stylesheet">
+<section class="match-list">
+  {% for match in list_matches %}
+    <ul class="person-list">
+        {% for person in match %}
+            <li>
+                <span class="person-name">
+                    {{ person }}
+                </span>
+            </li>
+        {% endfor %}
+    </ul>
+  {% endfor %}
+</section>
+{% endblock %}

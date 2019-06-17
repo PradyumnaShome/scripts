@@ -1,0 +1,32 @@
+body {
+  background-color: aquamarine;
+}
+
+.match-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #60aaff;
+  color: white;
+  margin: 2vh 5vh;
+}
+
+.person-list {
+  background-color: blueviolet;
+  padding: 2vh;
+  margin: 1vh;
+  list-style-type: none;
+  font-size: 1.15em;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1.heading {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-size: 2em;
+  margin: 2vh;
+}
