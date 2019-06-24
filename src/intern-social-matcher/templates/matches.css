@@ -13,6 +13,9 @@ body {
 }
 
 .person-list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   background-color: blueviolet;
   padding: 2vh;
   margin: 1vh;
