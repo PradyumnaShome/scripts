@@ -78,8 +78,9 @@ def postprocess_match(match):
                 for item in intersection:
                     dict_upsert_list(match_object, COMMON_FIELD, item)
             else:
-                # Pick 3 interests at random to talk about
-                for i in range(3):
+                all_interests_without_duplicates = list(set(all_interests))
+                # Pick count_interests / 3 things at random, as things to talk about
+                for i in range(len(all_interests_without_duplicates) / 2):
                     dict_upsert_list(match_object, COMMON_FIELD,
                                      random.choice(all_interests))
         else:
