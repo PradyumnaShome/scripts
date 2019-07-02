@@ -1,5 +1,6 @@
 body {
   background-color: aquamarine;
+  margin: 3vh;
 }
 
 .match-list {
@@ -9,7 +10,6 @@ body {
   text-align: center;
   background-color: #60aaff;
   color: white;
-  margin: 2vh 5vh;
 }
 
 .person-list {
@@ -26,10 +26,33 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-h1.heading {
+.person-list:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.heading {
   text-align: center;
   font-weight: bold;
   font-family: "Saira Semi Condensed", sans-serif;
+  background-color:rgb(202, 100, 134);
+  padding: 3vh;
+}
+
+h1 {
   font-size: 2em;
-  margin: 2vh;
+  margin: 0.25vh;
+  margin-bottom: 0;
+  color: yellow;
+}
+
+p.subtitle {
+    font-size: 1.25em;
+    margin: 0 !important;
+    padding: 0;
+}
+
+p.subtitle a {
+    color: rgb(200, 255, 0);
+    font-family: "Noto Sans HK";
 }
