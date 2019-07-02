@@ -9,14 +9,11 @@ ARG_MISSING_ERROR_MESSAGE = "See usage in README. Must provide path to JSON outp
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print(ARG_MISSING_ERROR_MESSAGE,
-              file=sys.stderr)
+        print(ARG_MISSING_ERROR_MESSAGE, file=sys.stderr)
         sys.exit(os.EX_USAGE)
 
-    env = Environment(
-        loader=FileSystemLoader(TEMPLATES_DIRECTORY),
-        autoescape=select_autoescape(['html', 'xml'])
-    )
+    env = Environment(loader=FileSystemLoader(TEMPLATES_DIRECTORY),
+                      autoescape=select_autoescape(['html', 'xml']))
 
     generated_matches_filename = sys.argv[1]
 

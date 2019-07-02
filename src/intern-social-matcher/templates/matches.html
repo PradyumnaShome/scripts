@@ -28,16 +28,26 @@
 <main>
   <section class="match-list">
     {% for match in list_matches %}
-      <ul class="person-list">
-          {% for person in match %}
-              <li>
-                  <span class="person-name">
-                      {{ person }}
-                  </span>
-              </li>
-          {% endfor %}
-      </ul>
+  <ul class="person-list">
+    {% for person in match.matches %}
+    <li>
+      <span class="person-name">
+        {{ person.name }}
+      </span>
+    </li>
     {% endfor %}
+    {% if match.common_attributes %}
+    <section class="common-attributes">
+      Things to talk about:
+      {% for attribute in match.common_attributes %}
+      <span class="common-attribute">
+        {{ attribute }}
+      </span>
+      {% endfor %}
+    </section>
+    {% endif %}
+  </ul>
+  {% endfor %}
   </section>
 </main>
 {% endblock %}

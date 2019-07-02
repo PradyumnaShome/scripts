@@ -56,3 +56,14 @@ p.subtitle a {
     color: rgb(200, 255, 0);
     font-family: "Noto Sans HK";
 }
+section.common-attributes {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1vh;
+}
+
+span.common-attribute {
+  color: #ffc760;
+  font-size: 1em;
+  font-weight: 200;
+  margin: 0.1vh;
+}
