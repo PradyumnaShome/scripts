@@ -1,6 +1,8 @@
-# Intern Social Matcher
+# [Intern Social Matcher](https://pradyumnashome.github.io/scripts/src/intern-social-matcher/)
 
 Get introduced to new interns every week.
+
+Hosted [here](https://pradyumnashome.github.io/scripts/src/intern-social-matcher/).
 
 ## Usage
 
