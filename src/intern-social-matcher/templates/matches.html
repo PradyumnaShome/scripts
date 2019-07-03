@@ -26,9 +26,9 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK|Open+Sans|Saira+Semi+Condensed&display=swap" rel="stylesheet">
 
 <main>
-  <section class="match-list">
+  <section class="matches-container">
     {% for match in list_matches %}
-  <ul class="person-list">
+  <ul class="match-card">
     {% for person in match.matches %}
     <li>
       <span class="person-name">
@@ -37,10 +37,10 @@
     </li>
     {% endfor %}
     {% if match.common_attributes %}
-    <section class="common-attributes">
+    <section class="mutual-interest-container">
       Things to talk about:
       {% for attribute in match.common_attributes %}
-      <span class="common-attribute">
+      <span class="mutual-interest">
         {{ attribute }}
       </span>
       {% endfor %}

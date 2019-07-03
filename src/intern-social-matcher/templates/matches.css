@@ -1,41 +1,56 @@
+:root {
+  --color-page-background: rgb(123, 255, 123);
+  --color-heading-foreground: hsl(54, 100%, 62%);
+  --color-heading-background: #ff6767;
+  --color-subtitle: rgb(200, 255, 0);
+
+  --color-card-background: #f36886;
+  --color-card-foreground: white;
+  --color-card-border: rgb(145, 255, 0);
+  --color-card-container-background: #ca5fa6;
+  --color-mutual-interests-text: yellow;
+  --color-mutual-interests-text-heading: rgb(52, 226, 203);
+}
+
 body {
-  background-color: aquamarine;
+  background-color: var(--color-page-background);
   margin: 3vh;
 }
 
-.match-list {
+.matches-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 2vh;
   text-align: center;
-  background-color: #60aaff;
-  color: white;
+  background-color: var(--color-card-container-background);
+  color: var(--color-card-foreground);
 }
 
-.person-list {
+.match-card {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  background-color: blueviolet;
+  background-color: var(--color-card-background);
   padding: 2vh;
-  margin: 1vh;
+  margin: 2vh;
   list-style-type: none;
   font-size: 1.15em;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0.5vh transparent dotted;
 }
 
-.person-list:hover {
-  background-color: white;
-  color: blueviolet;
+.match-card:hover {
+  border: 0.5vh var(--color-card-border) dotted;
 }
 
 .heading {
   text-align: center;
   font-weight: bold;
   font-family: "Saira Semi Condensed", sans-serif;
-  background-color: rgb(202, 100, 134);
+  background-color: var(--color-heading-background);
   padding: 3vh;
 }
 
@@ -43,7 +58,7 @@ h1 {
   font-size: 2em;
   margin: 0.25vh;
   margin-bottom: 0;
-  color: yellow;
+  color: var(--color-heading-foreground);
 }
 
 p.subtitle {
@@ -53,18 +68,21 @@ p.subtitle {
 }
 
 p.subtitle a {
-  color: rgb(200, 255, 0);
+  color: var(--color-subtitle);
   font-family: "Noto Sans HK";
 }
-section.common-attributes {
+
+section.mutual-interest-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 1vh;
-  color: rgb(52, 226, 203);
+  color: var(--color-mutual-interests-text-heading);
 }
 
-span.common-attribute {
-  color: #ffc760;
+span.mutual-interest {
+  color: var(--color-mutual-interests-text);
   font-size: 1.1em;
   font-weight: 400;
-  margin: 0.1vh;
+  margin: 0.4vh;
+  text-decoration-line: overline;
+  text-transform: lowercase;
 }
