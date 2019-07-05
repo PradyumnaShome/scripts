@@ -87,3 +87,9 @@ span.mutual-interest {
   text-decoration-line: overline;
   text-transform: lowercase;
 }
+
+@media only screen and (min-width: 426px) {
+  .match-card {
+    width: 25vw;
+  }
+}
